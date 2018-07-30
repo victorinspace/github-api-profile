@@ -17,3 +17,11 @@
 	display: flex;
 	color: white;
 }
+
+.menu-right {
+	float: right;
+}
+
+.profile-section {
+	border: 1px solid red;
+}
