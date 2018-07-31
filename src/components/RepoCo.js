@@ -2,8 +2,12 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import store from './store'
 import { connect } from 'react-redux'
+import { getRepo } from '../actions/pageFunctions.js'
 
 class RepoCo extends Component {
+	componentDidMount() {
+		getRepo()
+	}
 	render() {
 		return (
 			<div>
@@ -28,11 +32,15 @@ class RepoCo extends Component {
 					<button>Language: All</button>
 					<button>New</button>
 					{/* Repo List */}
-					<div>
-						<div className="repo-name">{}</div>
-						<div className="progrmming-language">{}</div>
-						<div className="updated">{}</div>
-					</div>
+					
+						{this.props.repos.map((data, i) => (
+							<div>
+								<div className="repo-name">{data.namee}</div>
+								<div className="programming-language">{data.language}</div>
+								<div className="updated">{data.updated_at}</div>
+							</div>
+						))}
+					
 				</div>
 			</div>
    )
@@ -40,7 +48,9 @@ class RepoCo extends Component {
 }
 
 RepoCo.defaultProps = {
-	name: []
+	repos: state.repos,
+	name: statee.repos.name,
+	language: state.repos.language
 }
 
 export default RepoCo
