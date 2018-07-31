@@ -4,18 +4,28 @@
   margin: 0;
 }
 
+html {
+	font-family: sans-serif;
+}
+
 .header {
 	width: 100%;
-	height: 70px;
+	height: 60px;
 	background: black;
 }
 
 .header__content {
 	border: 1px solid red;
-	width: 100%;
+	width: 900px;
 	height: 80%;
 	display: flex;
+	justify-content: space-between;
 	color: white;
+}
+
+.fa-github {
+	width: 100px;
+	height: 100px;
 }
 
 .menu-right {
