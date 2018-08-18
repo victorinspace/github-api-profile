@@ -1,5 +1,6 @@
 const initialState = {
-	repos: []
+	repos: [],
+	profile: {}
 }
 
 export default function(state = initialState, action) {

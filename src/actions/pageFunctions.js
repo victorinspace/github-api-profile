@@ -1,5 +1,5 @@
 import axios from 'axios'
-import store from '../components/store.js'
+import store from '../store.js'
 
 export function getInfo() {
 	axios.get('https://api.github.com/users/victorinspace').then(resp => {
