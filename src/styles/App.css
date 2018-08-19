@@ -12,9 +12,13 @@ body {
 	line-height: 1.5;
 	font-size: 14px;
 	color: #24292e;
-	background: #eee;
+	background: #24292e;
 }
 
+.main-container {
+	width: 1000px;
+	margin: 0 auto;
+}
 
 /****************************************
 	TOP NAV
@@ -22,9 +26,19 @@ body {
 
 /* Top Nav Container */
 /*-------------------------------------*/
-.nop-nav {
+/*.nop-nav {
 	background: #24292e;
 	border: 1px solid red;
+}*/
+
+#nop-nav {
+	background: #24292e;
+	max-height: 30px;
+	width: 1000px;
+	margin: 0 auto;
+	display-flex: flex;
+	flex-wrap: nowrap;
+		
 }
 
 .top-nav__text {
@@ -40,6 +54,7 @@ body {
 /* GitHub Icon */
 #github-icon {
 	font-size: 2em;
+	color: #fffffe;
 }
 
 /* Profile Search Bar */
@@ -56,30 +71,35 @@ body {
 
 /* Top Nav Text */
 .top-nav__text {
-	border: 1px solid green;
+	padding: 0 5px
 }
 
 /* Top Nav Right*/
 /*-------------------------------------*/
 .top-nav--right {
-	/*text-align: right;*/
-	border: 2px solid red;
+	text-align: right;
+	margin-right: ;
 }
 
 /* Bell Icon */
 #bell-icon {
 	font-size: 17px;
+	color: #fffffe;
+	padding: 0 5px;
 }
 
 /* Plus Symbol Icon */
 #plus-icon {
 	font-size: 17px;
+	color: #fffffe;
+	padding: 0 5px;
 }
 
 /* Top Nav Avatar */
 .top-avatar {
 	width: 20px;
 	border-radius: 5px;
+	margin: 0 5px;
 }
 
 
@@ -89,8 +109,11 @@ body {
 
 /* Main Container */
 /*-------------------------------------*/
-.container {
+.profile-container {
 	display: flex;
+	background: #fffffe;
+	width: 1000px;
+	margin: 0 auto;
 }
 
 /* Profile Info */
