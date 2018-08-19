@@ -8,30 +8,168 @@ html {
 	font-family: sans-serif;
 }
 
-.header {
-	width: 100%;
-	height: 60px;
-	background: black;
+body {
+	line-height: 1.5;
+	font-size: 14px;
+	color: #24292e;
+	background: #eee;
 }
 
-.header__content {
+
+/****************************************
+	TOP NAV
+****************************************/
+
+/* Top Nav Container */
+/*-------------------------------------*/
+.nop-nav {
+	background: #24292e;
 	border: 1px solid red;
-	width: 900px;
-	height: 80%;
+}
+
+.top-nav__text {
+	color: #fffffe;
+}
+
+/* Top Nav Left */
+/*-------------------------------------*/
+.top-nav---left {
+	border: 2px solid blue;
+}
+
+/* GitHub Icon */
+#github-icon {
+	font-size: 2em;
+}
+
+/* Profile Search Bar */
+.profile-search {
+	height: 30px;
+	width: 300px;
+	border-radius: 3px;
+	background: #40464a;
+	color: #929597;
+	padding: 7px;
+	font-size: 13px;
+	border: none;
+}
+
+/* Top Nav Text */
+.top-nav__text {
+	border: 1px solid green;
+}
+
+/* Top Nav Right*/
+/*-------------------------------------*/
+.top-nav--right {
+	/*text-align: right;*/
+	border: 2px solid red;
+}
+
+/* Bell Icon */
+#bell-icon {
+	font-size: 17px;
+}
+
+/* Plus Symbol Icon */
+#plus-icon {
+	font-size: 17px;
+}
+
+/* Top Nav Avatar */
+.top-avatar {
+	width: 20px;
+	border-radius: 5px;
+}
+
+
+/****************************************
+	PROFILE CONTENT
+****************************************/
+
+/* Main Container */
+/*-------------------------------------*/
+.container {
 	display: flex;
-	justify-content: space-between;
+}
+
+/* Profile Info */
+/*-------------------------------------*/
+.profile {
+	width: 225px;
+	height: 360px;
+	border-bottom: 1px solid #eee;
+}
+
+.main-avatar {
+	width: 225px;
+	border-radius: 10px;
+}
+
+.name {
+	font-size: 25px;
+	border-radius: 10px;
+}
+
+.profile-name {
+	color: #666666;
+	font-size: 25px;
+}
+
+.bio {
+	width: 225px;
+	height: 35px;
+	background: #eee;
+	border-radius: 4px;
+}
+
+.data {
+	width: 696px;
+}
+
+
+/****************************************
+	REPO CONTENT
+****************************************/
+
+/* Repo Container */
+/*-------------------------------------*/
+.repo-container {
+	height: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.repo-bar {
+	width: 696px;
+	height: 45px;
+	display: flex;
+	border-bottom: 1px solid #eee;
+}
+
+.repo-search {
+	height: 30px;
+	width: 380px;
+}
+
+.repo-new {
+	height: 30px;
+	border-radius: 3px;
+	/*background: #eee;*/
 	color: white;
 }
 
-.fa-github {
-	width: 100px;
-	height: 100px;
+.repos {
+	width: 696px;
+	height: 75px;
+	border-bottom: 1px solid #eee;
+	/*color: #eee;*/
 }
 
-.menu-right {
-	float: right;
+.repo-name {
+	color: black;
 }
 
-.profile-section {
-	border: 1px solid red;
+.repo-language {
+	font-size: 14px;
 }
