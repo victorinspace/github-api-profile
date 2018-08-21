@@ -25,28 +25,24 @@ body {
 	background: black;
 	color: white;
 	height: 50px;
-	width: 100%;
-	margin: 0 auto;
 	display-flex: flex;
 	flex-direction: row;
-}
-
-.top-nav__text {
-	color: #fffffe;
+	justify-content: space-evenly;
 }
 
 /* Top Nav Left */
 /*-------------------------------------*/
-.top-nav---left {
-	border: 2px solid blue;
+.top-nav--left {
 	display: flex;
-	height: 50px;
+	padding-top: 5px;
 }
 
 /* GitHub Icon */
 #github-icon {
 	font-size: 2em;
 	color: #fffffe;
+	padding: 5px;
+	margin-left: 215px;
 }
 
 /* Profile Search Bar */
@@ -63,14 +59,16 @@ body {
 
 /* Top Nav Text */
 .top-nav__text {
-	/*padding: 0 5px*/
+	color: #fffffe;
+	padding: 5px;
 }
 
 /* Top Nav Right*/
 /*-------------------------------------*/
 .top-nav--right {
-	text-align: right;
-	margin-right: ;
+	float: right;
+	margin: -25px;
+	margin-right: 350px;
 }
 
 /* Bell Icon */
@@ -105,7 +103,7 @@ body {
 	display: flex;
 	background: #fffffe;
 	width: 1000px;
-	margin: 0 auto;
+	margin: 20px auto;
 }
 
 /* Profile Info */
@@ -140,6 +138,13 @@ body {
 
 .data {
 	width: 696px;
+}
+
+.tab-container {
+	height: 100px;
+	list-style: none;
+	float: right;
+	display: flex;
 }
 
 
